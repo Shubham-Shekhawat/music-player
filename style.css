@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: white;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 85%;
+    background-color: aquamarine;
+    display: flex;
+    padding: 5vw 10vw;
+}
+#left{
+    width: 45%;
+    height: 100%;
+    background-color: rgb(44, 67, 9);
+    background-image: url("./image/Screenshot\ 2024-02-13\ 041358.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#right{
+    width: 55%;
+    height: 100%;
+    background-color: rgb(92, 102, 77);
+    padding:0 3vw;
+}
+#right h2{
+    font-size: 40px;
+}
+#all-songs{
+    width: 100%;
+    background-color: rgb(5, 27, 10);
+    height: 85%;
+}
+
+.song-card {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ffffff;
+    padding: 18px 10px;
+}
+.song-card:nth-last-child(1){
+    /* background-color: red; */
+    border-bottom: 1px solid white;
+}
+.song-card img{
+    height: 55px;
+    width: 55px;
+    margin-right: 20px;
+}
+.part1{
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+.song-card h6{
+    font-size:20px;
+}
+.song-card:hover{
+    background-color: rgb(18, 71, 53);
+}
+#player{
+    width: 100%;
+    height: 15%;
+    background-color: rgb(41, 32, 32);
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#player h3:active{
+    scale: 0.8;
+}
